@@ -280,7 +280,7 @@ export default function DivisiPage() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
                   <PersonCard person={dept.kepala} onClick={() => setSelected(dept.kepala)} size="sm" />
                   {dept.sekdep && (
-                    <PersonCard person={dept.sekdep} onClick={() => setSelected(dept.sekdep)} size="sm" />
+                    <PersonCard person={dept.sekdep} onClick={() => setSelected(dept.sekdep!)} size="sm" />
                   )}
                 </div>
 
