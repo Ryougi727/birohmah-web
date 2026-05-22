@@ -10,7 +10,7 @@ type Person = {
   npm: string;
   fakultas: string;
   prodi: string;
-  foto?: string; // nanti isi path foto, misal "/foto/ahmad.jpg"
+  foto?: string; // nanti isi path foto, misal "/foto/ahmad.JPG"
 };
 
 type Departemen = {
@@ -28,10 +28,10 @@ type Departemen = {
 // DATA — GANTI SESUAI DATA ASLI BIROHMAH
 // ============================================================
 const presidium: Person[] = [
-  { nama: "Abdurrahman Aufa", role: "Ketua Umum", npm: "2211011001", fakultas: "FT", prodi: "Teknik Sipil", foto: "/foto pims/rahman.jpg" },
-  { nama: "Ghina Shofarina", role: "Wakil Ketua Umum", npm: "2211012002", fakultas: "FK", prodi: "Dokter bedah", foto: "/foto pims/ghina.jpg" },
-  { nama: "Nurul Hafiza", role: "Bendahara Umum", npm: "2211013003", fakultas: "FISIP", prodi: "aduh lupa", foto: "/foto pims/nurul.jpg" },
-  { nama: "Deka Kusuma Hersa Putra", role: "Sekretaris Jendral", npm: "2315012002", fakultas: "FT", prodi: "Teknik Lingkungan", foto: "/foto pims/deka.jpg" },
+  { nama: "Abdurrahman Aufa", role: "Ketua Umum", npm: "2211011001", fakultas: "FT", prodi: "Teknik Sipil", foto: "/foto pims/rahman.JPG" },
+  { nama: "Ghina Shofarina", role: "Wakil Ketua Umum", npm: "2211012002", fakultas: "FK", prodi: "Dokter bedah", foto: "/foto pims/ghina.JPG" },
+  { nama: "Nurul Hafiza", role: "Bendahara Umum", npm: "2211013003", fakultas: "FISIP", prodi: "aduh lupa", foto: "/foto pims/nurul.JPG" },
+  { nama: "Deka Kusuma Hersa Putra", role: "Sekretaris Jendral", npm: "2315012002", fakultas: "FT", prodi: "Teknik Lingkungan", foto: "/foto pims/deka.jpeg" },
 ];
 
 const biro: Departemen[] = [
@@ -49,8 +49,8 @@ const biro: Departemen[] = [
     nama: "Biro Internal",
     deskripsi: "Mengelola keuangan dan anggaran organisasi",
     isBiro: true,
-    kepala: { nama: "M Iqbal Baihaqi", role: "Kepala Biro Internal", npm: "2211015005", fakultas: "FEB", prodi: "Manajemen", foto: "/foto pims/iqbal.jpg" },
-    sekbir: { nama: "Kurnia Amalia", role: "Sekretaris Biro Internal", npm: "2211015006", fakultas: "FEB", prodi: "Manajemen", foto: "/foto pims/kurnia.jpg" },
+    kepala: { nama: "M Iqbal Baihaqi", role: "Kepala Biro Internal", npm: "2211015005", fakultas: "FEB", prodi: "Manajemen", foto: "/foto pims/iqbal.JPG" },
+    sekbir: { nama: "Kurnia Amalia", role: "Sekretaris Biro Internal", npm: "2211015006", fakultas: "FEB", prodi: "Manajemen", foto: "/foto pims/kurnia.JPG" },
     staff: [],
   },
 ];
@@ -60,7 +60,7 @@ const departemen: Departemen[] = [
     icon: "📚",
     nama: "Kaderisasi",
     deskripsi: "Pembinaan karakter & rekrutmen anggota baru Birohmah",
-    kepala: { nama: "M Hanif Abdurrahman", role: "Kepala Dept. Kaderisasi", npm: "2211016006", fakultas: "FKIP", prodi: "Pendidikan Matematika", foto: "/foto pims/hanif.jpg" },
+    kepala: { nama: "M Hanif Abdurrahman", role: "Kepala Dept. Kaderisasi", npm: "2211016006", fakultas: "FKIP", prodi: "Pendidikan Matematika", foto: "/foto pims/hanif.JPG" },
     sekdep: { nama: "Luthfiya Dzakiyah", role: "Sekretaris Dept. Kaderisasi", npm: "2211016007", fakultas: "FKIP", prodi: "Pendidikan Matematika" },
     staff: [
       { nama: "Rina Safitri", role: "Staff", npm: "2221011010", fakultas: "FMIPA", prodi: "Biologi" },
@@ -71,8 +71,8 @@ const departemen: Departemen[] = [
     icon: "🕌",
     nama: "Kajian Islam dan Ilmu Keumatan",
     deskripsi: "Menyelenggarakan kajian, seminar, dan syiar dakwah kampus",
-    kepala: { nama: "Akram Mardani", role: "Kepala Dept. KIIK", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/akram.jpg" },
-    sekdep: { nama: "Nur Aida", role: "Sekretaris Dept. KIIK", npm: "2211017008", fakultas: "FK", prodi: "Ilmu Sejarah", foto: "/foto pims/aida.jpg" },
+    kepala: { nama: "Akram Mardani", role: "Kepala Dept. KIIK", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/akram.JPG" },
+    sekdep: { nama: "Nur Aida", role: "Sekretaris Dept. KIIK", npm: "2211017008", fakultas: "FK", prodi: "Ilmu Sejarah", foto: "/foto pims/aida.JPG" },
     staff: [
       { nama: "Nama Staff 1", role: "Staff", npm: "---", fakultas: "---", prodi: "---" },
     ],
@@ -81,7 +81,7 @@ const departemen: Departemen[] = [
     icon: "📸",
     nama: "Media dan Branding",
     deskripsi: "Mengelola konten digital, desain, dan dokumentasi kegiatan",
-    kepala: { nama: "Adam Khalid", role: "Kepala Dept. Media dan Branding", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/adam.jpg" },
+    kepala: { nama: "Adam Khalid", role: "Kepala Dept. Media dan Branding", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/adam.JPG" },
     sekdep: { nama: "Nadila Nur Hanifa", role: "Sekretaris Dept. Media dan Branding", npm: "2211017009", fakultas: "FK", prodi: "Ilmu Komunikasi" },
     staff: [],
   },
@@ -89,15 +89,15 @@ const departemen: Departemen[] = [
     icon: "💼",
     nama: "Bisnis dan Mitra",
     deskripsi: "Mengembangkan kemandirian ekonomi dan kemitraan strategis",
-    kepala: { nama: "Haris Munandara", role: "Kepala Dept. Bisnis dan Mitra", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/haris.jpg" },
-    sekdep: { nama: "Khatamul", role: "Sekretaris Dept. Bisnis dan Mitra", npm: "2211017010", fakultas: "FEB", prodi: "Manajemen", foto: "/foto pims/tamul.jpg" },
+    kepala: { nama: "Haris Munandara", role: "Kepala Dept. Bisnis dan Mitra", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/haris.JPG" },
+    sekdep: { nama: "Khatamul", role: "Sekretaris Dept. Bisnis dan Mitra", npm: "2211017010", fakultas: "FEB", prodi: "Manajemen", foto: "/foto pims/tamul.JPG" },
     staff: [],
   },
   {
     icon: "🏆",
     nama: "Akademik dan Prestasi",
     deskripsi: "Mendorong prestasi akademik & non-akademik anggota",
-    kepala: { nama: "M Abdul Hadi A", role: "Kepala Dept. Akademik dan Prestasi", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/hadi.jpg" },
+    kepala: { nama: "M Abdul Hadi A", role: "Kepala Dept. Akademik dan Prestasi", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/hadi.JPG" },
     sekdep: { nama: "Fadhilla Aulia Mucharam", role: "Sekretaris Dept. Akademik dan Prestasi", npm: "2211017011", fakultas: "FISIP", prodi: "Psikologi" },
     staff: [],
   },
@@ -105,24 +105,24 @@ const departemen: Departemen[] = [
     icon: "🤝",
     nama: "Hubungan Masyarakat",
     deskripsi: "Menjalin relasi eksternal & kegiatan bakti sosial kemasyarakatan",
-    kepala: { nama: "Faisal Abdurrafi", role: "Kepala Dept. Hubungan Masyarakat", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/faisall.jpg" },
-    sekdep: { nama: "Eva", role: "Sekretaris Dept. Hubungan Masyarakat", npm: "2211017012", fakultas: "FISIP", prodi: "Ilmu Sosial", foto: "/foto pims/eva.jpg" },
+    kepala: { nama: "Faisal Abdurrafi", role: "Kepala Dept. Hubungan Masyarakat", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/faisall.JPG" },
+    sekdep: { nama: "Eva", role: "Sekretaris Dept. Hubungan Masyarakat", npm: "2211017012", fakultas: "FISIP", prodi: "Ilmu Sosial", foto: "/foto pims/eva.JPG" },
     staff: [],
   },
   {
     icon: "📖",
     nama: "Pembinaan, Pengembangan, Potensi Baca Al-Quran dan Seni Islam",
     deskripsi: "Pembinaan tilawah, tahfidz, dan pengembangan seni budaya Islam",
-    kepala: { nama: "Syeiikh Yahya", role: "Kepala Dept. P3Q-SI", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/yahya.jpg" },
-    sekdep: { nama: "Qurrotuain Mufidah", role: "Sekretaris Dept. P3Q-SI", npm: "2211017013", fakultas: "FK", prodi: "Ilmu Sejarah", foto: "/foto pims/ain.jpg" },
+    kepala: { nama: "Syeiikh Yahya", role: "Kepala Dept. P3Q-SI", npm: "---", fakultas: "---", prodi: "---", foto: "/foto pims/yahya.JPG" },
+    sekdep: { nama: "Qurrotuain Mufidah", role: "Sekretaris Dept. P3Q-SI", npm: "2211017013", fakultas: "FK", prodi: "Ilmu Sejarah", foto: "/foto pims/ain.JPG" },
     staff: [],
   },
   {
     icon: "🧕",
     nama: "Kemuslimahan",
     deskripsi: "Pembinaan muslimah & penyelenggaraan kegiatan keperempuanan Islam",
-    kepala: { nama: "Ana Asma Rita Bakti", role: "Kepala Dept. Kemuslimahan", npm: "2211017007", fakultas: "FK", prodi: "Kedokteran", foto: "/foto pims/ana.jpg" },
-    sekdep: { nama: "Euis", role: "Sekretaris Dept. Kemuslimahan", npm: "2211017014", fakultas: "FK", prodi: "Ilmu Sejarah", foto: "/foto pims/euis.jpg" },
+    kepala: { nama: "Ana Asma Rita Bakti", role: "Kepala Dept. Kemuslimahan", npm: "2211017007", fakultas: "FK", prodi: "Kedokteran", foto: "/foto pims/ana.JPG" },
+    sekdep: { nama: "Euis", role: "Sekretaris Dept. Kemuslimahan", npm: "2211017014", fakultas: "FK", prodi: "Ilmu Sejarah", foto: "/foto pims/euis.JPG" },
     staff: [
       { nama: "Putri Ayu Lestari", role: "Staff", npm: "2221013012", fakultas: "FEB", prodi: "Ekonomi Pembangunan" },
     ],
